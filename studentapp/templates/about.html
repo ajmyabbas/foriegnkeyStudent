@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container bg-light mlx-4 my-4">
+        {% for  msg in messages %}
+        <h1 style="color: blueviolet; text-align:center;">{{ msg }}</h1>
+        {% endfor %}
+        
+        <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6mIqR-61xHjJUEMUfzQvP_ZeVtRZ-Hh_B9OQIh5hLjVH1ZO5U23ZehKJMmIsZkMF5Ew&usqp=CAU"
+            width="150px" ,hieght="50px"></center>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <a href="{% url 'logout' %}" rol="button" class="btn btn-info w-100">LOG OUT</a>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+    
+    {% endblock %}
