@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container bg-light mlx-4 my-4">
+    {% for  msg in messages %}
+    <h1 style="color: blueviolet; text-align:center;">{{ msg }}</h1>
+    {% endfor %}
+
+    <h2>welcome teacher</h2>
+{% endblock %}    

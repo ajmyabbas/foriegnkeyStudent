@@ -136,4 +136,8 @@ def add_course(request):
         crs.course_name=cors
         crs.fee=cfee
         crs.save()
-        return redirect(student1)     
+        return redirect(student1) 
+
+@login_required(login_url='login')  
+def show_teacher(request): 
+    return render(request,'techer.html')           
